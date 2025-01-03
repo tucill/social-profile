@@ -72,3 +72,98 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Font family */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variable */
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+  --fsPrimary: 14px;
+  --fw400: 400;
+  --fw600: 600;
+  --fw700: 700;
+}
+
+body {
+  background-color: var(--Grey900);
+  height: 100svh;
+  font-family: "Inter", sans-serif;
+  font-size: var(--fsPrimary);
+  font-weight: var(--fw400);
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background-color: var(--Grey800);
+  max-width: 18.75rem;
+  min-height: 30rem;
+  padding: 10px 20px;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.avatar-profile {
+  display: block;
+  max-width: 6rem;
+  margin: 0.6rem auto 0.8rem;
+  border-radius: 50%;
+}
+
+.username {
+  color: var(--White);
+}
+
+.location {
+  color: var(--Green);
+  margin-bottom: 0.8rem;
+}
+
+.role {
+  color: var(--White);
+}
+
+.social-links {
+  padding: 0;
+}
+
+.social-links a {
+  display: block;
+  background-color: var(--Grey700);
+  color: var(--White);
+  padding: 8px 15px;
+  margin-bottom: 0.7rem;
+  border-radius: 0.313rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--Green);
+  color: var(--Grey900);
+}
